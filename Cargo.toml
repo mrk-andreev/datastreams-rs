@@ -1,0 +1,23 @@
+[package]
+name = "datastreams-rs"
+version = "0.3.0"
+authors = [
+    "Mark Andreev <mark.andreev@gmail.com>"
+]
+readme = "README.md"
+description = "DataStreams container"
+edition = "2021"
+license = "Apache-2.0"
+repository = "https://github.com/mrk-andreev/datastreams-rs.git"
+keywords = ["data_stream", "container", "prototype"]
+categories = ["data-structures"]
+exclude = [".git", "target", ".idea"]
+
+[dependencies]
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+[dev-dependencies]
+criterion = "0.5.1"
